@@ -1,6 +1,3 @@
     <ul class='bottom-nav-bar'>
-        <li class="bottom-nav-bar__item live">אפשרויות LIVE</li>
-        <li class="bottom-nav-bar__item camera">הפעל מצלמות</li>
-        <li class="bottom-nav-bar__item manage-team">ניהול קבוצה</li>
-        <li class="bottom-nav-bar__item games">משחקים</li>
+        <li ng-repeat="(key, value) in footerItems" class="bottom-nav-bar__item {{key}}">{{value}}</li>
     </ul>

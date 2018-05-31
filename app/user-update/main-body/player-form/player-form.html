@@ -1,0 +1,7 @@
+<form class='players-data'>
+    <input class="players-data__input"
+           ng-repeat="placeHolder in placeHolders" 
+           placeholder="{{placeHolder}}" 
+           ng-model="data[$index]">
+    <button class="players-data__btn" ng-click="updateToParent()">שמור שינויים</button>
+</form>

@@ -3,18 +3,7 @@
     <div class="image-box">
         <div class="image-box__pic" style="background-image:url({{$parent.currentImageUrl}})"></div>
         <button class="image-box__btn" ng-click="changeCSS($parent.currentImageUrl)">עדכן תמונה</button>
-        <div class={{selectorCSS}}>
-                <div class='image-selector' style="background-image:url({{img1}})" ng-click="changeCSS(img1)"></div>
-                <div class='image-selector' style="background-image:url({{img2}})" ng-click="changeCSS(img2)"></div>
-                <div class='image-selector' style="background-image:url({{img3}})" ng-click="changeCSS(img3)"></div>
-        </div>
+        <picker></picker>
     </div>
-    <form class='players-data'>
-        <input class="players-data__input" type="text" placeholder="שם" ng-model='name'>
-        <input class="players-data__input" type="text" placeholder="שם משפחה" ng-model='lastName'>
-        <input class="players-data__input" type="text" placeholder="סיסמא" ng-model='password'>
-        <input class="players-data__input" type="text" placeholder="סיסמא חדשה" ng-model='newPassword'>
-        <input class="players-data__input" type="text" placeholder="טלפון" ng-model='phone'>
-        <button class="players-data__btn" ng-click="check()">שמור שינויים</button>
-    </form>
+    <player-form class='player-form'></player-form>
 </div>

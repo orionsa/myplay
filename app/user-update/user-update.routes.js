@@ -10,10 +10,5 @@ export default function routes($stateProvider) {
       url: '/',
       template: require('./user-update.html'),
       controller: userUpdateCtrl,
-      // resolve: {
-      //   image: ['UserUpdateService', (UserUpdateService) => {
-      //     return UserUpdateService.profileImage()
-      //   }]
-      // }
     });
 }

@@ -1,0 +1,7 @@
+<div class={{$parent.selectorCSS}}>
+        <div class="image-selector" 
+            ng-repeat='image in imagesUrls' 
+            style="background-image:url({{image}})"
+            ng-click="$parent.$parent.changeCSS(image)">
+        </div>
+</div>
